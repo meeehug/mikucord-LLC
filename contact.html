@@ -3,53 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Mikucord LLC</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Us - Mikucord LLC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="team.html">Talent</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="mentalcheck.html">Empty Page</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Mikucord LLC Logo" height="50">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentalcheck.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main>
-        <div class="background-image"></div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <section class="contact-section">
+    <section class="hero">
+        <div class="container">
             <h1>Contact Us</h1>
-            <p>Have questions? Reach out to us!</p>
-            <form>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-
-    <div class="social-icons">
-        <a href="https://x.com/CptnHawkeye"><img src="img\twitter-icon.png" alt="Twitter" width="50" height="50"></a>
-        <a href="https://www.tiktok.com/@taqeemcdaniel?lang=en"><img src="img\tiktok-icon.png" alt="TikTok" width="50" height="50"></a>
-        <a href="https://www.youtube.com/@cptnhawkeye6849"><img src="img\youtube-icon.png" alt="YouTube" width="50" height="50"></a>
-        <a href="https://discord.gg/PRrhxS9trs"><img src="img\discord-icon.png" alt="Discord" width="50" height="50"></a>
-    </div>
+            <p>Get in touch with us for inquiries, support, or collaboration.</p>
+        </div>
+    </section>
     
-    <footer>
-        <p>&copy; mikucord LLC. All rights reserved.</p>
+    <section class="container contact-section">
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>Email: <a href="mailto:info@mikucord.llc">info@mikucord.llc</a></p>
+            <p>Phone: +1 (234) 567-8901</p>
+            <p>Address: 123 Business Road, Tech City, TX</p>
+        </div>
+        
+        <div class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+</div>
+    </section>
+    
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Mikucord LLC. All Rights Reserved.</p>
+            <div class="footer-social-icons">
+                <a href="https://x.com/CptnHawkeye"><img src="img/twitter-icon.png" alt="Twitter" width="25" height="25"></a>
+                <a href="https://www.tiktok.com/@taqeemcdaniel?lang=en"><img src="img/tiktok-icon.png" alt="TikTok" width="25" height="25"></a>
+                <a href="https://www.youtube.com/@cptnhawkeye6849"><img src="img/youtube-icon.png" alt="YouTube" width="25" height="25"></a>
+                <a href="https://discord.gg/PRrhxS9trs"><img src="img/discord-icon.png" alt="Discord" width="25" height="25"></a>
+            </div>
+        </div>
     </footer>
-    <script src="mikucordllc.js"></script>
+    <script src="mikucordllc.js" defer></script>
 </body>
 </html>
